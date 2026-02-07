@@ -1,417 +1,706 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Gabriel Boff - Software Engineer with 4+ years of experience in Python, C#, Go, Rust. Specialized in backend systems, cloud infrastructure, and algorithmic solutions."
+        />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== PRECONNECT ===============-->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+        <link rel="preconnect" href="https://unpkg.com" crossorigin />
 
-  <!--=============== FAVICON ===============-->
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <!--=============== FAVICON ===============-->
+        <link rel="icon" href="images/g.png" type="image/png" />
 
-  <!--=============== REMIX ICONS ===============-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!--=============== CRITICAL CSS INLINE ===============-->
+        <style>
+            :root {
+                --tn-bg: #1a1b26;
+                --tn-fg-bright: #e0e6ff;
+                --tn-cyan-bright: #b4dcff;
+                --font-mono: "Iosevka", "Courier New", monospace;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: var(--font-mono);
+                font-size: 14px;
+                line-height: 1.6;
+                color: var(--tn-fg-bright);
+                background-color: var(--tn-bg);
+                letter-spacing: 0.02em;
+            }
+            .header {
+                position: sticky;
+                top: 0;
+                background-color: #1f2335;
+                border-bottom: 2px solid #3b4261;
+                z-index: 1000;
+            }
+        </style>
 
-  <!--=============== CSS ===============-->
-  <link rel="stylesheet" type="text/css" href="styles.css">
+        <!--=============== REMIX ICONS (async) ===============-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+            media="print"
+            onload="this.media = 'all'"
+        />
 
+        <!--=============== MAIN CSS (async) ===============-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="styles.css"
+            media="print"
+            onload="this.media = 'all'"
+        />
+        <noscript>
+            <link rel="stylesheet" type="text/css" href="styles.css" />
+        </noscript>
 
+        <title>Gabriel Boff - Software Engineer | Python, C#, Go, Rust</title>
+    </head>
 
-  <title>Gabriel - portfolio</title>
-</head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="navbar container">
+                <div class="navbar__logo">
+                    <a href="#" aria-label="Gabriel Boff Home"
+                        >[gabriel.boff]</a
+                    >
+                </div>
+                <ul class="navbar__menu">
+                    <li><a href="#home" class="nav-link">home</a></li>
+                    <li><a href="#about" class="nav-link">about</a></li>
+                    <li><a href="#projects" class="nav-link">projects</a></li>
+                    <li><a href="#skills" class="nav-link">skills</a></li>
+                    <li>
+                        <a href="#certifications" class="nav-link"
+                            >certifications</a
+                        >
+                    </li>
+                    <li><a href="#contact" class="nav-link">contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-  <!--=============== HEADER ===============-->
-  <header class="profile container">
-    <!-- Theme button -->
-    <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--=============== HOME SECTION ===============-->
+            <section class="hero container" id="home">
+                <div class="hero__content">
+                    <div class="hero__data">
+                        <h1 class="hero__title">
+                            Hi, I'm
+                            <span class="gradient-text">Gabriel Boff</span>
+                        </h1>
+                        <p class="hero__subtitle">
+                            Software Engineer & Full-Stack Developer
+                        </p>
+                        <p class="hero__description">
+                            Building scalable, secure, and elegant solutions.
+                            Experienced with cloud infrastructure, backend
+                            development, and modern web technologies. I
+                            transform ideas into production-ready applications.
+                        </p>
 
-    <div class="profile__container grid">
-      <div class="profile__data">
-        <div class="profile__border">
-          <div class="profile__perfil">
-            <!-- Insert your image, according to the example size of the portfolio -->
-            <img src="images/g.png" alt="">
-          </div>
-        </div>
+                        <div class="hero__info">
+                            <div class="info-box">
+                                <h3 class="info-number">4+</h3>
+                                <p class="info-text">Years Experience</p>
+                            </div>
+                            <div class="info-box">
+                                <h3 class="info-number">30+</h3>
+                                <p class="info-text">Projects</p>
+                            </div>
+                            <div class="info-box">
+                                <h3 class="info-number">∞</h3>
+                                <p class="info-text">Lines of Code</p>
+                            </div>
+                        </div>
 
-        <h2 class="profile__name">Gabriel Boff</h2>
-        <h3 class="profile__profession">Software Engineer</h3>
+                        <div class="hero__buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="ri-arrow-right-line"></i> View Work
+                            </a>
+                            <a
+                                href="https://github.com/gabrielchboff"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-secondary"
+                            >
+                                <i class="ri-github-line"></i> GitHub
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/gabrielchboff/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-secondary"
+                            >
+                                <i class="ri-linkedin-box-line"></i> LinkedIn
+                            </a>
+                        </div>
 
-        <ul class="profile__social">
-          <a href="https://www.linkedin.com/in/gabrielchboff/" target="_blank" rel="noopener noreferrer"  class="profile__social-link">
-            <i class="ri-linkedin-box-line"></i>
-          </a>
-          <a href="https://github.com/gabrielchboff" target="_blank" rel="noopener noreferrer"  class="profile__social-link">
-            <i class="ri-github-line"></i>
-          </a>
-        </ul>
-      </div>
+                        <div class="hero__languages">
+                            <span class="language-badge">Português</span>
+                            <span class="language-badge">English</span>
+                            <span class="language-badge">Español</span>
+                            <span class="language-badge">Italiano</span>
+                            <span class="language-badge">日本語</span>
+                        </div>
+                    </div>
 
-      <div class="profile__info grid">
-        <div class="profile__info-group">
-          <h3 class="profile__info-number">4</h3>
-          <p class="profile__info-description">
-            Years of <br> work
-          </p>
-        </div>
-        <div class="profile__info-group">
-          <h3 class="profile__info-number">Safe</h3>
-          <p class="profile__info-description">
-            and fast </br> web </br> applications
-          </p>
-        </div>
-        <div class="profile__info-group">
-          <h3 class="profile__info-number">Ethical</h3>
-          <p class="profile__info-description">hacking </br> development </br> vision</p>
-        </div>
-      </div>
+                    <div class="hero__image">
+                        <div class="profile-card">
+                            <img
+                                src="images/g.png"
+                                alt="Gabriel Boff"
+                                class="profile-image"
+                                width="280"
+                                height="297"
+                                loading="eager"
+                            />
+                            <div class="profile-badge">Available</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <div class="py profile__info-group">
-       <p class="profile__info-description">
-         Languages: 🇧🇷 🇺🇸 🇮🇹 🇪🇸
-       </p>
-      </div>
-    </div>
-  </header>
+            <!--=============== ABOUT SECTION ===============-->
+            <section class="about container" id="about">
+                <h2 class="section-title">About</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>
+                            I'm a passionate software engineer with 4+ years of
+                            professional experience across multiple domains. My
+                            journey includes roles as a Software Engineer,
+                            Backend Developer, and Technical Lead across various
+                            companies, working on projects ranging from IoT
+                            integrations to financial systems and enterprise
+                            applications.
+                        </p>
+                        <p>
+                            I specialize in building robust backend systems,
+                            optimizing cloud infrastructure, and implementing
+                            security best practices. My expertise spans Python,
+                            C#, Go, Rust, and modern development frameworks,
+                            with a strong focus on DevOps, containerization, and
+                            scalable architecture.
+                        </p>
+                        <p>
+                            Beyond coding, I'm passionate about clean code,
+                            mentoring junior developers, and solving complex
+                            algorithmic problems. I thrive in collaborative
+                            environments and love contributing to open-source
+                            projects.
+                        </p>
+                    </div>
+                    <div class="about__highlights">
+                        <div class="highlight-card">
+                            <i class="ri-code-s-slash-line"></i>
+                            <h3>Full-Stack Dev</h3>
+                            <p>
+                                Backend and frontend expertise with modern
+                                frameworks
+                            </p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="ri-cloud-line"></i>
+                            <h3>Cloud & DevOps</h3>
+                            <p>
+                                AWS, Docker, CI/CD pipelines, and infrastructure
+                                automation
+                            </p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="ri-shield-check-line"></i>
+                            <h3>Security First</h3>
+                            <p>
+                                Implementing secure coding practices and
+                                authentication
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <!--=============== MAIN ===============-->
-  <main class="main">
-    <section class="filters container">
-      <!--=============== FILTERS TABS ===============-->
-      <ul class="filters__content">
-        <button class="filters__button filter-tab-active" data-target="#projects">
-          Projects
-        </button>
-        <button class="filters__button" data-target="#skills">
-          Skills
-        </button>
-      </ul>
+            <!--=============== PROJECTS SECTION ===============-->
+            <section class="projects container" id="projects">
+                <h2 class="section-title">Projects</h2>
 
-      <div class="filters__sections">
-        <!--=============== PROJECTS ===============-->
-        <div class="projects__content grid filters__active" data-content id="projects">
-          <article class="projects__card">
-            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-            <img src="images/discord_alerts.jpg" alt="" class="projects__img">
+                <div class="projects__filters">
+                    <button class="filter-btn active" data-filter="all">
+                        all
+                    </button>
+                    <button class="filter-btn" data-filter="backend">
+                        backend
+                    </button>
+                    <button class="filter-btn" data-filter="algorithms">
+                        algorithms
+                    </button>
+                </div>
 
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Python</span>
-                <h3 class="projects__title">DiscordAlerts</h3>
-                <a href="https://pypi.org/project/DiscordAlerts/" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
+                <div class="projects__grid" id="projects-container">
+                    <!-- Projects will be loaded from JSON -->
+                </div>
+            </section>
+
+            <!--=============== SKILLS SECTION ===============-->
+            <section class="skills container" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills__content">
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">
+                            <i class="ri-terminal-box-line"></i> Languages
+                        </h3>
+                        <div class="skills__grid">
+                            <div class="skill-item">
+                                <div class="skill-name">Python</div>
+                                <span class="skill-percent">92%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 92%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">C# / .NET</div>
+                                <span class="skill-percent">90%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 90%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Rust</div>
+                                <span class="skill-percent">75%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 75%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Golang</div>
+                                <span class="skill-percent">85%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 85%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">JavaScript/TS</div>
+                                <span class="skill-percent">78%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 78%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Bash/Shell</div>
+                                <span class="skill-percent">82%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 82%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">
+                            <i class="ri-stack-line"></i> Frameworks
+                        </h3>
+                        <div class="skills__grid">
+                            <div class="skill-item">
+                                <div class="skill-name">Django</div>
+                                <span class="skill-percent">80%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 80%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Pandas</div>
+                                <span class="skill-percent">78%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 78%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">FastAPI</div>
+                                <span class="skill-percent">67%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 67%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Bootsrap</div>
+                                <span class="skill-percent">87%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 87%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">
+                            <i class="ri-cloud-line"></i> DevOps & Cloud
+                        </h3>
+                        <div class="skills__grid">
+                            <div class="skill-item">
+                                <div class="skill-name">Docker</div>
+                                <span class="skill-percent">92%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 92%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">AWS</div>
+                                <span class="skill-percent">88%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 88%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">GIT</div>
+                                <span class="skill-percent">90%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 90%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Linux</div>
+                                <span class="skill-percent">95%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 95%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Cyber Security</div>
+                                <span class="skill-percent">55%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 55%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">
+                            <i class="ri-database-2-line"></i> Database
+                        </h3>
+                        <div class="skills__grid">
+                            <div class="skill-item">
+                                <div class="skill-name">PostgreSQL</div>
+                                <span class="skill-percent">88%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 88%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">MongoDB</div>
+                                <span class="skill-percent">80%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 80%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Redis</div>
+                                <span class="skill-percent">75%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 75%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Oracle</div>
+                                <span class="skill-percent">85%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 85%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">MySQL</div>
+                                <span class="skill-percent">88%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 88%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">
+                            <i class="ri-hammer-line"></i> Tools and AI
+                        </h3>
+                        <div class="skills__grid">
+                            <div class="skill-item">
+                                <div class="skill-name">Agile Method</div>
+                                <span class="skill-percent">88%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 88%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Generative AI</div>
+                                <span class="skill-percent">80%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 80%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">FlutterFlow</div>
+                                <span class="skill-percent">75%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 75%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">n8n</div>
+                                <span class="skill-percent">85%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 85%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Supabase</div>
+                                <span class="skill-percent">65%</span>
+                                <div class="skill-level">
+                                    <div
+                                        class="skill-bar"
+                                        style="width: 65%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== CERTIFICATIONS SECTION ===============-->
+            <section class="skills container" id="certifications">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certifications__content">
+                    <div class="cert-item">
+                        <h3 class="cert-title">Linux Essentials</h3>
+                        <p class="cert-issuer">Cisco Networking Academy</p>
+                        <p class="cert-date">Issued Nov 2024</p>
+                        <div class="cert-skills">
+                            <span class="cert-skill">Linux</span>
+                            <span class="cert-skill">Bash</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <h3 class="cert-title">Getting Started with Rust</h3>
+                        <p class="cert-issuer">The Linux Foundation</p>
+                        <p class="cert-date">Issued Sep 2024</p>
+                        <div class="cert-skills">
+                            <span class="cert-skill">Rust</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <h3 class="cert-title">Python Collections</h3>
+                        <p class="cert-issuer">Alura</p>
+                        <p class="cert-date">Issued Apr 2023</p>
+                        <div class="cert-skills">
+                            <span class="cert-skill">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <h3 class="cert-title">Python OOP</h3>
+                        <p class="cert-issuer">Alura</p>
+                        <p class="cert-date">Issued Apr 2023</p>
+                        <div class="cert-skills">
+                            <span class="cert-skill">Python</span>
+                            <span class="cert-skill">OOP</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <h3 class="cert-title">Advanced OOP</h3>
+                        <p class="cert-issuer">Alura</p>
+                        <p class="cert-date">Issued Apr 2023</p>
+                        <div class="cert-skills">
+                            <span class="cert-skill">Python</span>
+                            <span class="cert-skill">OOP</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <h3 class="cert-title">String Manipulation</h3>
+                        <p class="cert-issuer">Alura</p>
+                        <p class="cert-date">Issued Apr 2023</p>
+                        <div class="cert-skills">
+                            <span class="cert-skill">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== CONTACT SECTION ===============-->
+            <section class="contact container" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact__content">
+                    <p class="contact__description">
+                        I'm always interested in hearing about new projects and
+                        opportunities. Feel free to reach out through LinkedIn
+                        or GitHub.
+                    </p>
+
+                    <div class="contact__links">
+                        <a
+                            href="https://www.linkedin.com/in/gabrielchboff/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link"
+                            aria-label="Connect on LinkedIn"
+                        >
+                            <i
+                                class="ri-linkedin-box-line"
+                                aria-hidden="true"
+                            ></i>
+                            <span>LinkedIn</span>
+                            <i
+                                class="ri-arrow-right-line"
+                                aria-hidden="true"
+                            ></i>
+                        </a>
+                        <a
+                            href="https://github.com/gabrielchboff"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link"
+                            aria-label="View GitHub profile"
+                        >
+                            <i class="ri-github-line" aria-hidden="true"></i>
+                            <span>GitHub</span>
+                            <i
+                                class="ri-arrow-right-line"
+                                aria-hidden="true"
+                            ></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__content container">
+                <p class="footer__copy">
+                    © 2024 gabriel.boff | built with helix
+                </p>
+                <div class="footer__socials">
+                    <a
+                        href="https://github.com/gabrielchboff"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="footer-social"
+                        aria-label="GitHub"
+                    >
+                        <i class="ri-github-line" aria-hidden="true"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/gabrielchboff/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="footer-social"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="ri-linkedin-box-line" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
-          </article>
+        </footer>
 
-          <article class="projects__card">
-            <img src="images/faraday.jpg" alt="" class="projects__img">
+        <!--=============== DEFERRED SCRIPTS ===============-->
+        <script>
+            // Defer ScrollReveal loading
+            window.addEventListener("load", function () {
+                var script = document.createElement("script");
+                script.src =
+                    "https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js";
+                script.defer = true;
+                document.body.appendChild(script);
+            });
+        </script>
 
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Web</span>
-                <h3 class="projects__title">Faraday Web Server</h3>
-                <a href="https://github.com/gabrielchboff/Faraday-web-server" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__card">
-            <img src="images/main.jpg" alt="" class="projects__img">
-
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Algorithms</span>
-                <h3 class="projects__title">Main Algorithms from Roseta Code</h3>
-                <a href="https://github.com/gabrielchboff/main-algorithms" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__card">
-            <img src="images/crud.jpg" alt="" class="projects__img">
-
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Go</span>
-                <h3 class="projects__title">Bachman CRUD</h3>
-                <a href="https://github.com/gabrielchboff/Bachman-CRUD" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__card">
-            <img src="https://lm-q9sp.onrender.com/brand.png" alt="" class="projects__img">
-
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Svelte</span>
-                <h3 class="projects__title">LM Mentorship</h3>
-                <a href="https://lm-q9sp.onrender.com/" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-
-          <article class="projects__card">
-            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="projects__img">
-
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">HTML, CSS and JavaScript</span>
-                <h3 class="projects__title">wdd131</h3>
-                <a href="https://github.com/gabrielchboff/wdd131" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="https://spark-site.onrender.com/_app/immutable/assets/sparklogo.DGS0s2uC.png" alt="" class="projects__img">
-
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Svelte</span>
-                <h3 class="projects__title">Spark</h3>
-                <a href="https://spark-site.onrender.com" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__card">
-            <img src="https://images.unsplash.com/photo-1485322551133-3a4c27a9d925?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="projects__img">
-
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Svelte</span>
-                <h3 class="projects__title">Library CRUD</h3>
-                <a href="https://github.com/gabrielchboff/library-using-svelte" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__card">
-            <img src="https://images.unsplash.com/photo-1597220353445-c1aecf25f0c3?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="projects__img">
-
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">.NET C#</span>
-                <h3 class="projects__title">CSE120 C# projects</h3>
-                <a href="https://github.com/gabrielchboff/cse210-projects" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__card">
-            <img src="https://plus.unsplash.com/premium_photo-1679830513869-cd3648acb1db?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="projects__img">
-
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Multiple languages</span>
-                <h3 class="projects__title">Travel Booking</h3>
-                <a href="https://github.com/gabrielchboff/travel-booking" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <!--=============== SKILLS ===============-->
-        <div class="skills__content grid" data-content id="skills">
-          <div class="skills__area">
-            <h3 class="skills__title">Frontend</h3>
-
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Tailwind</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Bootstrap</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">SvelteKit</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills__area">
-            <h3 class="skills__title">Backend</h3>
-
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Python</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Django</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">C#</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">AWS</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Git</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Rust</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Go</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">C/C++</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Docker</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Data bases</h3>
-                    <span class="skills__level">Advance</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-    <!--=============== FOOTER ===============-->
-  <footer class="footer container">
-    <span class="footer__copy">
-      &#169; gabrielchboff. All rigths reserved
-    </span>
-  </footer>
-
-
-  <!--=============== SCROLLREVEAL ===============-->
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-  <!--=============== MAIN JS ===============-->
-  <script src="main.js"></script>
-</body>
-
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js" defer></script>
+    </body>
 </html>

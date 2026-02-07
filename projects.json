@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Main Algorithms",
+    "description": "This repository contains the main algorithms problems and the most commom softwares made by any developer in multiple languages. The motivation behind this project is explore and implement algorithms.",
+    "technologies": ["Python", "Rust", "C/C++", "C#"],
+    "category": "algorithms",
+    "github": "https://github.com/gabrielchboff/main-algorithms",
+    "image": "images/main.gif",
+    "featured": true
+  },
+  {
+    "name": "Bachman CRUD",
+    "description": "Charles William Bachman III was an American computer scientist. He was particularly known for his work in the early development of database management systems, This is a live-server with a CRUD system saved on memory.",
+    "technologies": ["Go"],
+    "category": "backend",
+    "github": "https://github.com/gabrielchboff/Bachman-CRUD",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop",
+    "featured": true
+  },
+  {
+    "name": "Discord Alerts",
+    "description": "This tool has the focus to help developers to implement notifications and alerts for their discord servers. The idea is call decorators on functions that needs monitoration.",
+    "technologies": ["Python"],
+    "category": "backend",
+    "github": "https://github.com/gabrielchboff/DiscordAlerts",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+    "featured": false
+  },
+  {
+    "name": "Faraday Web Server",
+    "description": "Michael Faraday was an English scientist who contributed to the study of electromagnetism and electrochemistry. This project explore how to build your own web server.",
+    "technologies": ["Go"],
+    "category": "backend",
+    "github": "https://github.com/gabrielchboff/Faraday-web-server",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
+    "featured": false
+  },
+  {
+    "name": "CSE212-HW",
+    "description": "This repository is a step-by-step to learn data structures on C#",
+    "technologies": ["C#"],
+    "category": "algorithms",
+    "github": "https://github.com/gabrielchboff/cse212-hw",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
+    "featured": true
+  },
+  {
+    "name": "Dotfiles",
+    "description": "A clean, efficient, and minimalist desktop environment centered around XMonad window manager. This setup emphasizes keyboard-driven workflows, minimalism, and productivity.",
+    "technologies": ["haskell", "Lua", "Shell"],
+    "category": "backend",
+    "github": "https://github.com/gabrielchboff/dotfiles",
+    "image": "https://raw.githubusercontent.com/gabrielchboff/dotfiles/refs/heads/main/images/p3.png",
+    "featured": true
+  }
+]
